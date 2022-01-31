@@ -23,13 +23,57 @@ exports[`ForecastSummary renders correctly 1`] = `
     <div
       class="forecast-summary__temperature"
     >
-      22°C
+       22°C
     </div>
     <div
       class="forecast-summary__description"
     >
       Stub description
     </div>
+    <button
+      type="button"
+    >
+      More details
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ForecastSummary renders correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+    data-testid="forecast-summary"
+  >
+    <div
+      class="forecast-summary__date"
+    >
+      Thu 1st Jan
+    </div>
+    <div
+      class="forecast-summary__icon"
+      data-testid="forecast-icon"
+    >
+      <i
+        class="wi wi-day-sunny"
+        name="owm"
+      />
+    </div>
+    <div
+      class="forecast-summary__temperature"
+    >
+       22°C
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      Stub description
+    </div>
+    <button
+      type="button"
+    >
+      More details
+    </button>
   </div>
 </DocumentFragment>
 `;
