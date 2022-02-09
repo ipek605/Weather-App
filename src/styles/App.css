@@ -1,3 +1,7 @@
+body {
+  background-image: "../images/weather.jpg";
+}
+
 .weather-app {
     margin: 0 20px;
   }

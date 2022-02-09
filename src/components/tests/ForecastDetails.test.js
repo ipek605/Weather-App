@@ -3,21 +3,17 @@ import { render } from "@testing-library/react";
 import ForecastDetails from "../ForecastDetails";
 
 describe("ForecastDetails", () => {
-  const validProps = [
-    {
-      date: 1111111,
-      description: "Stub description 1",
-      wind: {
-        speed: 22,
-        direction: "poyraz",
-      },
-      temperature: {
-        max: 22,
-        min: 12,
-      },
-      humidity: 50,
+  const validProps = {
+    temperature: {
+      min: 12,
+      max: 22
     },
-  ];
+    wind: {
+      speed: 10,
+      direction: "s"
+    },
+    humidity: 30
+  };
 
   it("renders correctly", () => {
     const { asFragment } = render(<ForecastDetails forecast={validProps} />);

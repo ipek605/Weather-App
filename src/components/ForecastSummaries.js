@@ -9,6 +9,7 @@ function ForecastSummaries({ forecasts, onForecastSelect }) {
       {forecasts.map((forecast) => (
         <ForecastSummary
           key={forecast.date}
+          date={forecast.date}
           description={forecast.description}
           icon={forecast.icon}
           onSelect={onForecastSelect}
@@ -25,12 +26,12 @@ ForecastSummaries.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
       description: PropTypes.string.isRequired,
-      icon: PropTypes.string.isRequired,
+      icon: PropTypes.number.isRequired,
       temperature: PropTypes.shape({
         min: PropTypes.number,
-        max: PropTypes.number,
-      }).isRequired,
+        max: PropTypes.number
+      }).isRequired
     })
   ).isRequired,
-  onForecastSelect: PropTypes.func.isRequired,
+  onForecastSelect: PropTypes.func.isRequired
 };

@@ -12,7 +12,7 @@ function ForecastSummary(props) {
         {moment(date).format("ddd Do MMM")}
       </div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon name="owm" iconId={icon} />
+        <WeatherIcon name="owm" iconId={icon.toString()} />
       </div>
       <div className="forecast-summary__temperature">
         {" "}
@@ -32,10 +32,10 @@ export default ForecastSummary;
 ForecastSummary.propTypes = {
   date: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.number.isRequired,
   temperature: PropTypes.shape({
     min: PropTypes.number,
-    max: PropTypes.number,
+    max: PropTypes.number
   }).isRequired,
-  onSelect: PropTypes.func.isRequired,
+  onSelect: PropTypes.func.isRequired
 };

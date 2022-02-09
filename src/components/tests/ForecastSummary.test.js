@@ -9,9 +9,9 @@ describe("ForecastSummary", () => {
     icon: "800",
     temperature: {
       min: 12,
-      max: 22,
+      max: 22
     },
-    onSelect: () => {},
+    onSelect: () => {}
   };
 
   it("renders correctly", () => {

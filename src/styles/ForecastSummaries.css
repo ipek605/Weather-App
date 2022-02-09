@@ -1,4 +1,32 @@
 .forecast-summaries {
     display: flex;
     justify-content: space-between;
-  }
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 25px;
+    border: solid 1px #999;
+    padding: 20px;
+}
+
+.forecast-summary__date {
+    padding: 10px;
+    margin: 0px 10px;
+    border-bottom: 0.1px solid #999;
+}
+
+.forecast-summary__temperature {
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.forecast-summary__description {
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.forecast-summary__icon {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 10px;
+}
