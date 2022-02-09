@@ -5,28 +5,93 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 25px;
     border: solid 1px #999;
+    border-radius: 25px;
     padding: 20px;
+    background-color:rgba(230, 232, 245, 0.5) ;
 }
 
 .forecast-summary__date {
     padding: 10px;
-    margin: 0px 10px;
     border-bottom: 0.1px solid #999;
 }
 
 .forecast-summary__temperature {
     padding: 10px;
-    margin: 0px 10px;
 }
 
 .forecast-summary__description {
     padding: 10px;
-    margin: 0px 10px;
 }
 
 .forecast-summary__icon {
     padding: 10px;
+    padding-top: 20px;
     display: flex;
     justify-content: flex-start;
-    margin: 0px 10px;
+}
+
+@media screen and (max-width: 900px){
+    .forecast-summaries {
+        display: flex;
+    flex-direction: column-reverse;
+        font-size: 20px;
+        margin-top: 80px;
+        padding: 20px 40px;
+        }
+    
+    .forecast-summary__date {
+        padding: 10px;
+        border-bottom: 0px ;
+        border-top:1px solid #999;
+        margin-top:30px;
+    }
+    
+    .forecast-summary__temperature {
+        padding: 10px;
+    }
+    
+    .forecast-summary__description {
+        padding: 10px;
+    }
+    
+    .forecast-summary__icon {
+        padding: 10px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .forecast-summaries {
+        display: flex;
+    flex-direction: column-reverse;
+        font-size: 16px;
+        margin: 25px;
+        padding: 20px 40px;
+        }
+    
+    .forecast-summary__date {
+        padding:5px;
+        padding-top: 20px;
+        border-bottom: 0px ;
+        border-top:1px solid #999;
+        
+    }
+    
+    .forecast-summary__temperature {
+        padding: 5px;
+    }
+    
+    .forecast-summary__description {
+        padding:5px
+    }
+    
+    .forecast-summary__icon {
+        padding: 5px;
+        padding-top: 20px;
+    }
 }
