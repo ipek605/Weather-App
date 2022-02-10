@@ -1,7 +1,14 @@
 body {
-  background-image: "../images/weather.jpg";
+  background-image: "../images/weather2.jpg";
+  height: 100%;
+  background-position:100%;
 }
 
 .weather-app {
     margin: 0 20px;
+  }
+
+  html {
+    height:100%;
+
   }
