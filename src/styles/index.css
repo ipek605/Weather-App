@@ -146,7 +146,7 @@ button:disabled {
   box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
-/*
+
 @media screen and (max-device-width: 960px) {
   .location-details {
     margin-top: 30px;
@@ -230,4 +230,3 @@ button:disabled {
     height: 36px;
   }
 }
-*/
