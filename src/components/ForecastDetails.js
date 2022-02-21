@@ -9,21 +9,22 @@ function ForecastDetails(props) {
     <div className="forecast-details" data-testid="forecast-details">
       <div className="forecast-details__temperature">
         <span className="forecast-details__temperature-max">
-          {temperature.max}
+          Temperature Max: {temperature.max}
+          &deg;C
         </span>
         <span className="forecast-details__temperature-min">
-          {temperature.min}
+          Temperature Min: {temperature.min}
           &deg;C
         </span>
       </div>
       <div className="forecast-details_wind-speed">
-        {wind.speed}
+        Wind Speed: {wind.speed}
         <span className="forecast-details_wind-direction">
-          {wind.direction}
+          Wind Direction: {wind.direction}
         </span>
       </div>
       <div className="forecast-details_humidity">
-        {humidity}
+        Humidity: {humidity}
         {}
       </div>
     </div>
