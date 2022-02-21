@@ -19,5 +19,5 @@ export default SearchForm;
 SearchForm.propTypes = {
   searchText: PropTypes.string.isRequired,
   setSearchText: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func.isRequired,
 };

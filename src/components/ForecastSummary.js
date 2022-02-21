@@ -35,7 +35,7 @@ ForecastSummary.propTypes = {
   icon: PropTypes.number.isRequired,
   temperature: PropTypes.shape({
     min: PropTypes.number,
-    max: PropTypes.number
+    max: PropTypes.number,
   }).isRequired,
-  onSelect: PropTypes.func.isRequired
+  onSelect: PropTypes.func.isRequired,
 };

@@ -11,12 +11,12 @@ function LocationDetails(props) {
 }
 
 LocationDetails.defaultProps = {
-  errorMessage: ""
+  errorMessage: "",
 };
 
 LocationDetails.propTypes = {
   city: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
-  errorMessage: PropTypes.string
+  errorMessage: PropTypes.string,
 };
 export default LocationDetails;
