@@ -6,7 +6,7 @@ body {
 }
 
 code {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .location-details {
@@ -14,7 +14,7 @@ code {
     display: flex;
     justify-content: center;
     font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div input {
@@ -147,7 +147,7 @@ button:disabled {
         display: flex;
         justify-content: center;
         font-size: 36px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     div input {
@@ -200,7 +200,7 @@ button:disabled {
             display: flex;
             justify-content: center;
             font-size: 30px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         div input {
