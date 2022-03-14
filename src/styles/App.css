@@ -1,14 +1,48 @@
-body {
-  background-image: "../images/weather2.jpg";
-  height: 100%;
-  background-position:100%;
+.weather-app {
+  background-color: rgba(228, 228, 228, 0.6);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  transition: all ease 1s;
 }
 
-.weather-app {
-    margin: 0 20px;
+.main-forecast {
+  border:1px solid black;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(228, 228, 228, 0.7); 
+  width: 80%;
+  padding-bottom: 100px;
+}
+
+.location-details {
+  align-self: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+@media (min-width: 769px) and (max-width: 900px){
+  .main-forecast {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .location-details {
+    margin-left: 30px;
   }
 
-  html {
-    height:100%;
-
+  .weather-app {
+    height: 100%;
+    width: auto;
   }
+}

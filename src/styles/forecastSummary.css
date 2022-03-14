@@ -1,0 +1,71 @@
+.forecast-summary {
+    border-radius: 15px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 15%;
+    margin: -90px;
+    background-image: linear-gradient(
+        45deg,
+        #e4e4e4,
+        #bec6d3,
+        #d3d7df,
+        #ccdae4,
+        #bec6d3,
+        #d3d7df
+      );
+      background-size: 600%;
+      animation: gradient-animation 3s linear infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0%   { background-position:   0%; }
+    100% { background-position: 100%; }
+  }
+.forecast-summary > button {
+    display: flex;
+    flex-direction: column;
+    font-size: 01rem;
+    padding: 0px;
+    margin: 5px;
+    cursor: pointer;
+    border:none;
+    background-color: rgba(228,228,228,0);
+}
+
+.forecast-summary__icon {
+    font-size: 35px;
+    padding: 8px;
+    align-self: center;
+}
+.forecast-summary__temperature{
+    align-self: center;
+}
+.forecast-summary__description{
+    align-self: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .forecast-summary {
+        width: 16%;
+        padding: 5px 4px;
+    }
+    
+    .forecast-summary > button {
+        font-size: 0.5rem;
+        padding: 0px;
+        margin: 5px;
+    }
+    
+    .forecast-summary > div {
+        margin: 3px;
+        padding: 0px;
+    }
+    
+    .forecast-summary__icon {
+        font-size: 20px;
+        padding: 5px;
+    }
+}

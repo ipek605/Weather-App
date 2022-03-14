@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ForecastSummary from "./ForecastSummary";
-import "../styles/ForecastSummaries.css";
+import "../styles/forecastSummaries.css";
 
 function ForecastSummaries({ forecasts, onForecastSelect }) {
   return (
@@ -29,9 +29,9 @@ ForecastSummaries.propTypes = {
       icon: PropTypes.number.isRequired,
       temperature: PropTypes.shape({
         min: PropTypes.number,
-        max: PropTypes.number,
-      }).isRequired,
+        max: PropTypes.number
+      }).isRequired
     })
   ).isRequired,
-  onForecastSelect: PropTypes.func.isRequired,
+  onForecastSelect: PropTypes.func.isRequired
 };
