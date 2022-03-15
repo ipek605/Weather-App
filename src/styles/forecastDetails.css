@@ -32,26 +32,35 @@
 }
 
 @media (min-device-width: 769px) and (max-device-width: 900px) {
-  .forecast-details__body {
+  .forecast-details{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0;
+  }
+  .forecast-details__body {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 30px;
   }
 
   .forecast-details__date {
-    align-self: flex-start;
-    padding-left: 10px;
+    align-self: center;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 20px;
+    margin-left: 0;
   }
 
   .forecast-details__body__text {
-    align-self: flex-start;
-    padding-left: 10px;
+    align-items: center;
     width: 100%;
     margin-bottom: 0px;
   }
 
   .forecast-details__description {
     margin-top: 10px;
+    font-size: 1.5rem;;
   }
 }

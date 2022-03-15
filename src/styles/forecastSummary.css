@@ -47,25 +47,7 @@
     align-self: center;
 }
 
-@media only screen and (max-width: 750px) {
-    .forecast-summary {
-        width: 16%;
-        padding: 5px 4px;
-    }
-    
-    .forecast-summary > button {
-        font-size: 0.5rem;
-        padding: 0px;
-        margin: 5px;
-    }
-    
-    .forecast-summary > div {
-        margin: 3px;
-        padding: 0px;
-    }
-    
-    .forecast-summary__icon {
-        font-size: 20px;
-        padding: 5px;
-    }
+@media (min-device-width: 769px) and (max-device-width: 900px) {
+
+
 }

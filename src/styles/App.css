@@ -9,18 +9,17 @@
 }
 
 .main-forecast {
-  border:1px solid black;
+  display: flex;
+  border: 1px solid black;
   border-top: none;
   border-radius: 0 0 15px 15px;
-  background-color: rgba(228, 228, 228, 0.7); 
+  background-color: rgba(228, 228, 228, 0.7);
   width: 80%;
   padding-bottom: 100px;
 }
 
 .location-details {
-  align-self: flex-start;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  display: flex;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -31,18 +30,15 @@
   width: 80%;
 }
 
-@media (min-width: 769px) and (max-width: 900px){
+@media (min-device-width: 769px) and (max-device-width: 900px) {
   .main-forecast {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+display: flex;
+flex-direction: column;
   }
   .location-details {
-    margin-left: 30px;
+justify-content: center;
+margin-top: 50px;
   }
 
-  .weather-app {
-    height: 100%;
-    width: auto;
-  }
+
 }
