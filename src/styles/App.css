@@ -47,7 +47,10 @@ margin-top: 50px;
 }
 
 @media (max-device-width: 768px) {
-.main-forecast{
+.weather-app{
+  background-position: right;
+}
+  .main-forecast{
   align-items: center;
   justify-content: center;
   font-size: 2rem;;
