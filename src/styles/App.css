@@ -10,18 +10,21 @@
 
 .main-forecast {
   display: flex;
+  flex-direction: column;
   border: 1px solid black;
   border-top: none;
   border-radius: 0 0 15px 15px;
   background-color: rgba(228, 228, 228, 0.7);
   width: 80%;
   padding-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .location-details {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 0;
 }
 
 .error-message {
@@ -42,3 +45,12 @@ margin-top: 50px;
 
 
 }
+
+@media (max-device-width: 768px) {
+.main-forecast{
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;;
+}
+}
+

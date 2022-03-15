@@ -19,7 +19,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
         onChange={handleInputChange}
         value={searchText}
         onKeyUp={handleKeyPress}
-        placeholder="Search for a city"
+        placeholder="Search for a city in UK"
       />
       <button type="submit" onClick={onSubmit} data-testid="searchbutton">
         <AiOutlineSearch className="search-icon" />

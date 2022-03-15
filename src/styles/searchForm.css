@@ -19,6 +19,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   padding: 10px;
+  width: 50%;
 }
 
 .search-form > button {
@@ -33,10 +34,24 @@
 }
 
 .search-form > button:hover {
-  color: darkgray;
-  transform: all ease 1s;
+  background-color: darkgray;
+  transition: all ease 1s;
 }
 .search-form > input:hover {
-  color: darkgray;
-  transform: all ease 1s;
+  background-color: darkgray;
+  transition: all ease 1s;
+}
+
+@media (max-device-width: 768px) {
+.search-form{
+  padding-bottom:80px;
+  padding-top: 80px; 
+}
+  .search-form > input{
+width: 60%;
+font-size: 2rem;
+}
+.search-form > button {
+  font-size: 1.3rem;
+} 
 }
